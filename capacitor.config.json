@@ -1,0 +1,12 @@
+{
+  "appId": "com.dailychallenge.app",
+  "appName": "Daily Challenge",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "adjustMarginsForEdgeToEdge": "auto"
+  }
+}

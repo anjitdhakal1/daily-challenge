@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daily Challenge app with progress tracking and day-by-day tasks."
+    />
+    <title>Daily Challenge</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Daily Habit</p>
+          <h1>Daily Challenge</h1>
+        </div>
+        <button id="reset-btn" class="ghost-btn" type="button">Reset</button>
+      </header>
+
+      <main class="dashboard">
+        <section class="hero card">
+          <div>
+            <p class="label">Today</p>
+            <h2 id="today-title">Loading challenge...</h2>
+          </div>
+          <div class="streak-box">
+            <span>Streak</span>
+            <strong id="streak-count">0</strong>
+          </div>
+        </section>
+
+        <section class="stats-grid">
+          <div class="stat card">
+            <span class="label">Completed</span>
+            <strong id="completed-count">0</strong>
+          </div>
+          <div class="stat card">
+            <span class="label">Progress</span>
+            <strong id="progress-percent">0%</strong>
+          </div>
+          <div class="stat card">
+            <span class="label">Current Day</span>
+            <strong id="day-number">1</strong>
+          </div>
+        </section>
+
+        <section class="challenge-panel card">
+          <div class="section-header">
+            <h3>Challenge Details</h3>
+            <span id="challenge-tag" class="tag">Daily</span>
+          </div>
+          <p id="challenge-description"></p>
+
+          <div class="actions">
+            <button id="complete-btn" class="primary-btn" type="button">
+              Mark as done
+            </button>
+            <button id="next-btn" class="secondary-btn" type="button">
+              View next day
+            </button>
+          </div>
+        </section>
+
+        <section class="calendar card">
+          <div class="section-header">
+            <h3>Day-by-day timeline</h3>
+          </div>
+          <div id="day-list" class="day-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
